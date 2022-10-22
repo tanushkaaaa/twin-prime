@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Inputfunctions {
+  public static void main(String[] args) {
+   Scanner readme = new Scanner(System.in);
+   System.out.println("Enter Two Numbers");
+   int n1, n2, c1=0,c2=0;
+   n1 = readme.nextInt();
+   n2 = readme.nextInt();
+   for(int i=1;i<=n1;i++)
+   {
+   if(n1%i==0)
+   c1++;
+   }
+   for(int j=1;j<=n2;j++)
+   {
+       if(n2%j==0)
+       c2++;
+   }
+   if(c1<=2 && c2<=2)
+   {
+       if(n2-n1==2)
+   
+   System.out.println("twin prime");
+   else
+   System.out.println("not twin prime");
+ }
+}
+}
